@@ -106,7 +106,7 @@ class Network:
                 
                 # Nöron O1 (output) için ağırlık ve bias türevleri
                 dPrediction_dW5 = H1 * self.sigmoid_turev(sumO1) 
-                dPrediction_dW6 = H1 * self.sigmoid_turev(sumO1) 
+                dPrediction_dW6 = H2 * self.sigmoid_turev(sumO1) 
                 dPrediction_dB3 = self.sigmoid_turev(sumO1) 
                 
                 # Aynı zamanda tahmin değerinin H1 ve H2'ye göre türevlerinin de
